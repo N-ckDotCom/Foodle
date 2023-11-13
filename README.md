@@ -19,6 +19,8 @@ Welcome to Foodle, your open-source restaurant chatbot! This project simplifies 
 
 <img height="12" width="auto" alt="image" src="https://github.com/N-ckDotCom/Foodle/assets/93934484/a3daa809-42cc-4adc-a091-fc933f639fe8)"> **Redis**: In-memory data structure store used for caching.
 
+*In the current version all redis related code is commented out. This is because of limitations on my end regarding OpenShift.*
+
 ## System Architecture
 
 <img width="490" alt="image" src="https://github.com/N-ckDotCom/Foodle/assets/93934484/55df5ef1-cd2e-417a-984a-39682fe9b969">
@@ -27,12 +29,7 @@ Source: https://isoflow.io
 
 ## Deployment Guide
 
-
-[Provide instructions for deploying the application on OpenShift]
-
-## Getting Started
-
-[Include any necessary steps for developers to get started with the project]
+To deploy to OpenShift make sure you have `oc` installed and are logged in, then run the `kubernetes/deploy.sh` file. 
 
 ## License
 
