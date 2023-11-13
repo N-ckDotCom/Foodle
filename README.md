@@ -29,7 +29,7 @@ Source: https://isoflow.io
 
 ## Deployment Guide
 
-To deploy to OpenShift make sure you have `oc` installed and are logged in, then run the `kubernetes/deploy.sh` file. 
+To deploy to OpenShift make sure you have `oc` installed and are logged in, then run the `kubernetes/deploy.sh` file. You may need to wait for the nlu-model-api to fully start.
 
 ## License
 
