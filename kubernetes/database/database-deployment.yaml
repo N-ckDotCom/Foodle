@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: foodle-database
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: foodle-database
+  template:
+    metadata:
+      labels:
+        app: foodle-database
+    spec:
+      containers:
+      - name: foodle-database
+        image: redis:latest
+        ports:
+        - containerPort: 6379

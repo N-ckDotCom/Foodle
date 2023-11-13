@@ -1,0 +1,48 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_menu
+  - order_food
+  - track_order
+  - cancel_order
+
+entities:
+  - dish
+  - quantity
+
+slots:
+  dish:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: dish
+  quantity:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: quantity
+
+responses:
+  utter_greet:
+    - text: "Hello! Welcome to Foodle. How can I assist you today?"
+    - text: "Hi there! Ready to order some delicious food?"
+  utter_ask_menu:
+    - text: "Sure, I can help you with our menu. What would you like to order? %Menu"
+    - text: "Take a look at our menu. What can I get for you? %Menu"
+  utter_order_confirmation:
+    - text: "Great choice! I have added {quantity} {dish} to your order. %Confirm ${quantity} ${dish}"
+    - text: "Awesome! {quantity} {dish} has been added to your order. %Confirm ${quantity} ${dish}"
+  utter_track_order:
+    - text: "Sure, let me check the status of your order. Please wait a moment. %Track"
+    - text: "Let me find out where your order is. One moment, please. %Track"
+  utter_order_cancelled:
+    - text: "Your order has been cancelled. If you have any questions, feel free to ask. %Cancel"
+    - text: "Order cancelled. If you need assistance, feel free to reach out. %Cancel"
+  utter_default:
+    - text: "I'm sorry, I didn't quite understand. Can you please rephrase or ask a different question?"
+    - text: "Apologies, I didn't catch that. Could you repeat or ask something else?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

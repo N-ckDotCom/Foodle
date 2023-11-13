@@ -1,0 +1,62 @@
+nlu:
+  - intent: greet
+    examples: |
+      - Hi
+      - Hello
+      - Hey there
+      - Greetings
+      - Hi, Foodle!
+  - intent: ask_menu
+    examples: |
+      - What's on the menu?
+      - Can you show me the dishes?
+      - I'd like to see the menu
+      - What are my food options?
+      - Any recommendations for today?
+  - intent: order_food
+    examples: |
+      - I want to order {quantity} {dish}
+      - Can I get {quantity} {dish}, please?
+      - Add {quantity} {dish} to my order
+      - I'd like {quantity} of {dish}
+      - Place an order for {quantity} {dish}
+      - I want to order [2](quantity) [Pizza](dish)
+      - Can I get [2](quantity) [pepperoni pizza](dish), please?
+      - Add [3](quantity) [slices of cheese pizza](dish) to my order
+      - I'd like [2](quantity) of [Margherita pizza](dish)
+      - Place an order for [one](quantity) [vegetarian pizza](dish)
+      - I'd like [2](quantity) of [Caesar Salad](dish).
+      - Can you add [9](quantity) [Caprese Bruschetta](dish) to my order?
+      - Order [1](quantity) of [Antipasto Platter](dish).
+      - Get me [7](quantity) orders of [Garlic Bread](dish).
+      - I'd like [3](quantity) of [Mozzarella Sticks](dish).
+      - [Zuppa Toscana](dish), please.
+      - I'd like [5](quantity) of [Osso Buco](dish).
+      - Get me [10](quantity) [Lobster Ravioli](dish).
+      - Add [2](quantity) [Truffle Risotto](dish) to my order.
+      - [9](quantity) of [Chicken Marsala](dish) for me.
+      - I want [1](quantity) [Eggplant Parmesan](dish).
+      - [Shrimp Scampi](dish), please.
+      - I'd like [6](quantity) of [Tiramisu](dish) for dessert.
+      - [8](quantity) [Panna Cotta](dish), please.
+      - Can I have [4](quantity) [Cannoli](dish)?
+      - [Chocolate Fondant](dish) for dessert, please.
+      - [Lemon Sorbet](dish), please.
+      - I'd like [3](quantity) of [Affogato](dish).
+      - Bring me [5](quantity) bottle of [Chianti Classico](dish).
+      - I'd like [7](quantity) [Limoncello Spritz](dish).
+      - Can I get [1](quantity) [Espresso](dish)?
+      - Order [10](quantity) [Bellini](dish).
+      - [5](quantity) of [San Pellegrino](dish), please.
+      - I want [2](quantity) of [Italian Sparkling Wine](dish).
+
+  - intent: track_order
+    examples: |
+      - Where is my order?
+      - Can you check the status of my delivery?
+      - Can you track my order?
+      - Is my food on the way?
+      - Track my order
+  - intent: cancel_order
+    examples: |
+      - Jesus our lord and savior needs to invaluable the hingo

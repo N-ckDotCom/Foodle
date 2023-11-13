@@ -1,0 +1,31 @@
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+!.env.example
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+
+Welcome to Foodle - Your Smart Food Companion
+
+Foodle brings the joy back to ordering food with its intuitive chatbot interface. You can ask for the menu, add items to your order, and even checkout. Please note, features like order tracking and checkout require external services and setup.
+
+Let's take a quick tour of Foodle in action. As I open the app, I'll ask for the menu, scroll through the delicious options, and place an order for a Tiramisu and a Cannoli. Keep in mind, tracking and checkout are currently placeholders and need additional services for full functionality.
+
+
+Now, let's delve into the brains behind Foodle. Here in the system arhcitecture you can see all the different parts powering foodle. We have our frontend wich interacts to the API, foodle core which handles connection to the database, order and tracking apis and the nlu model. 
+
+Foodle is powered by a robust tech stack:
+THe frontend uses svelte,
+the backend node.js,
+rasa for the nlu-model and redis as data storage
+Future Possibilities
+
+As we look to the future, Foodle has exciting possibilities:
+Expanding the NLU model for better understanding
+Providing interfaces for real-time order tracking and streamlined ordering
+Enhancing the UI/UX for an more enjoyable experience

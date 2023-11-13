@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: foodle-core
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: foodle-core
+  template:
+    metadata:
+      labels:
+        app: foodle-core
+    spec:
+      containers:
+      - name: foodle-core
+        image: nickdotcom/foodle-core:latest
+        ports:
+        - containerPort: 3000

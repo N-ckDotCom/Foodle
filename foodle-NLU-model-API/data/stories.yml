@@ -1,0 +1,35 @@
+version: "3.1"
+
+stories:
+- story: Greet and Ask Menu
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_menu
+  - action: utter_ask_menu
+
+- story: Order Food
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_menu
+  - action: utter_ask_menu
+  - intent: order_food
+  - entities:
+    - dish: "Pizza"
+    - quantity: "2"
+  - action: utter_order_confirmation
+
+- story: Track Order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: track_order
+  - action: utter_track_order
+
+- story: Cancel Order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: cancel_order
+  - action: utter_order_cancelled

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: foodle-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: foodle-frontend
+  template:
+    metadata:
+      labels:
+        app: foodle-frontend
+    spec:
+      containers:
+      - name: foodle-frontend
+        image: nickdotcom/foodle-frontend:latest
+        ports:
+        - containerPort: 3000

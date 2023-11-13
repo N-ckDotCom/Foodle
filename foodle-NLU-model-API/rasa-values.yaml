@@ -1,0 +1,2 @@
+applicationSettings:
+initialModel: "https://github.com/RasaHQ/rasa-x-demo/blob/master/models/model.tar.gz?raw=true"

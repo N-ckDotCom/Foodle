@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: foodle-nlu-model-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: foodle-nlu-model-api
+  template:
+    metadata:
+      labels:
+        app: foodle-nlu-model-api
+    spec:
+      containers:
+      - name: foodle-nlu-model-api
+        image: nickdotcom/foodle-nlu-model-api:latest
+        ports:
+        - containerPort: 5005
+        resources:
+          limits:
+            memory: 2Gi # Increase limit
+          requests:
+            memory: 2Gi # Increase request
